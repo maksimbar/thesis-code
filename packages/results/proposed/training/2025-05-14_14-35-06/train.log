@@ -1,0 +1,82 @@
+[2025-05-14 14:35:06,305][__main__][INFO] - Using device: cuda
+[2025-05-14 14:35:25,897][utils][INFO] - Created training dataset / Clean files: 180 / Total patches: 33456
+[2025-05-14 14:35:32,341][utils][INFO] - Created validation dataset / Clean files: 60 / Total patches: 11028
+[2025-05-14 14:35:32,343][model][INFO] - Model config: layers=17, channels=64, activation=prelu, dilations: [2]
+[2025-05-14 14:35:32,354][__main__][INFO] - Trainable parameters: 557,121
+[2025-05-14 14:35:35,320][__main__][INFO] - Using SGD optimizer with initial LR: 0.075
+[2025-05-14 14:35:35,324][__main__][INFO] - Starting training for up to 50 epochs on cuda
+[2025-05-14 14:35:35,324][__main__][INFO] -  - Train batches/epoch: 261
+[2025-05-14 14:35:35,324][__main__][INFO] -  - Val patch batches/epoch: 87
+[2025-05-14 14:35:35,324][__main__][INFO] - Early stopping: Disabled
+[2025-05-14 14:35:35,326][utils][INFO] - Creating validation metrics AudioMetricDataset from /scratch/lustre/home/maba8006/Tiny-SDnCNN/data/valid...
+[2025-05-14 14:35:35,340][utils][INFO] - Finished creating validation metrics dataset.
+[2025-05-14 14:35:35,340][utils][INFO] - Found 720 clean/noisy pairs.
+[2025-05-14 14:35:35,340][__main__][INFO] - Validation metrics will be evaluated every 50 epochs on 720 files.
+[2025-05-14 14:37:27,924][__main__][INFO] - Epoch 1/50 | LR: 7.50e-02 | Tr Loss: 0.0247 | Vl Loss(p): 0.0090 | Time: 112.6s
+[2025-05-14 14:37:27,950][__main__][INFO] - Metric val_loss improved (0.0090 --> 0.0090). Saved best model.
+[2025-05-14 14:39:18,418][__main__][INFO] - Epoch 2/50 | LR: 6.55e-02 | Tr Loss: 0.0079 | Vl Loss(p): 0.0095 | Time: 110.5s
+[2025-05-14 14:41:09,005][__main__][INFO] - Epoch 3/50 | LR: 5.72e-02 | Tr Loss: 0.0072 | Vl Loss(p): 0.0073 | Time: 110.6s
+[2025-05-14 14:41:09,066][__main__][INFO] - Metric val_loss improved (0.0073 --> 0.0073). Saved best model.
+[2025-05-14 14:42:59,535][__main__][INFO] - Epoch 4/50 | LR: 5.00e-02 | Tr Loss: 0.0068 | Vl Loss(p): 0.0071 | Time: 110.5s
+[2025-05-14 14:42:59,554][__main__][INFO] - Metric val_loss improved (0.0071 --> 0.0071). Saved best model.
+[2025-05-14 14:44:50,080][__main__][INFO] - Epoch 5/50 | LR: 4.37e-02 | Tr Loss: 0.0066 | Vl Loss(p): 0.0071 | Time: 110.5s
+[2025-05-14 14:46:40,722][__main__][INFO] - Epoch 6/50 | LR: 3.82e-02 | Tr Loss: 0.0065 | Vl Loss(p): 0.0070 | Time: 110.6s
+[2025-05-14 14:46:40,741][__main__][INFO] - Metric val_loss improved (0.0070 --> 0.0070). Saved best model.
+[2025-05-14 14:48:31,309][__main__][INFO] - Epoch 7/50 | LR: 3.33e-02 | Tr Loss: 0.0064 | Vl Loss(p): 0.0069 | Time: 110.6s
+[2025-05-14 14:48:31,328][__main__][INFO] - Metric val_loss improved (0.0069 --> 0.0069). Saved best model.
+[2025-05-14 14:50:21,888][__main__][INFO] - Epoch 8/50 | LR: 2.91e-02 | Tr Loss: 0.0063 | Vl Loss(p): 0.0068 | Time: 110.6s
+[2025-05-14 14:50:21,909][__main__][INFO] - Metric val_loss improved (0.0068 --> 0.0068). Saved best model.
+[2025-05-14 14:52:12,447][__main__][INFO] - Epoch 9/50 | LR: 2.54e-02 | Tr Loss: 0.0063 | Vl Loss(p): 0.0065 | Time: 110.5s
+[2025-05-14 14:52:12,468][__main__][INFO] - Metric val_loss improved (0.0065 --> 0.0065). Saved best model.
+[2025-05-14 14:54:03,006][__main__][INFO] - Epoch 10/50 | LR: 2.22e-02 | Tr Loss: 0.0062 | Vl Loss(p): 0.0077 | Time: 110.5s
+[2025-05-14 14:55:53,511][__main__][INFO] - Epoch 11/50 | LR: 1.94e-02 | Tr Loss: 0.0061 | Vl Loss(p): 0.0063 | Time: 110.5s
+[2025-05-14 14:55:53,530][__main__][INFO] - Metric val_loss improved (0.0063 --> 0.0063). Saved best model.
+[2025-05-14 14:57:44,010][__main__][INFO] - Epoch 12/50 | LR: 1.70e-02 | Tr Loss: 0.0061 | Vl Loss(p): 0.0072 | Time: 110.5s
+[2025-05-14 14:59:34,653][__main__][INFO] - Epoch 13/50 | LR: 1.48e-02 | Tr Loss: 0.0061 | Vl Loss(p): 0.0064 | Time: 110.6s
+[2025-05-14 15:01:25,222][__main__][INFO] - Epoch 14/50 | LR: 1.30e-02 | Tr Loss: 0.0061 | Vl Loss(p): 0.0064 | Time: 110.6s
+[2025-05-14 15:03:15,793][__main__][INFO] - Epoch 15/50 | LR: 1.13e-02 | Tr Loss: 0.0060 | Vl Loss(p): 0.0063 | Time: 110.5s
+[2025-05-14 15:05:06,378][__main__][INFO] - Epoch 16/50 | LR: 9.88e-03 | Tr Loss: 0.0060 | Vl Loss(p): 0.0063 | Time: 110.6s
+[2025-05-14 15:06:56,982][__main__][INFO] - Epoch 17/50 | LR: 8.64e-03 | Tr Loss: 0.0060 | Vl Loss(p): 0.0062 | Time: 110.6s
+[2025-05-14 15:06:57,002][__main__][INFO] - Metric val_loss improved (0.0062 --> 0.0062). Saved best model.
+[2025-05-14 15:08:47,667][__main__][INFO] - Epoch 18/50 | LR: 7.54e-03 | Tr Loss: 0.0060 | Vl Loss(p): 0.0065 | Time: 110.7s
+[2025-05-14 15:10:38,272][__main__][INFO] - Epoch 19/50 | LR: 6.59e-03 | Tr Loss: 0.0060 | Vl Loss(p): 0.0063 | Time: 110.6s
+[2025-05-14 15:12:28,723][__main__][INFO] - Epoch 20/50 | LR: 5.76e-03 | Tr Loss: 0.0060 | Vl Loss(p): 0.0062 | Time: 110.4s
+[2025-05-14 15:14:19,278][__main__][INFO] - Epoch 21/50 | LR: 5.03e-03 | Tr Loss: 0.0060 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:14:19,299][__main__][INFO] - Metric val_loss improved (0.0061 --> 0.0061). Saved best model.
+[2025-05-14 15:16:09,816][__main__][INFO] - Epoch 22/50 | LR: 4.39e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0062 | Time: 110.5s
+[2025-05-14 15:18:00,388][__main__][INFO] - Epoch 23/50 | LR: 3.84e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0062 | Time: 110.6s
+[2025-05-14 15:19:50,957][__main__][INFO] - Epoch 24/50 | LR: 3.35e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0062 | Time: 110.6s
+[2025-05-14 15:21:41,550][__main__][INFO] - Epoch 25/50 | LR: 2.93e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0062 | Time: 110.6s
+[2025-05-14 15:23:32,181][__main__][INFO] - Epoch 26/50 | LR: 2.56e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:23:32,201][__main__][INFO] - Metric val_loss improved (0.0061 --> 0.0061). Saved best model.
+[2025-05-14 15:25:22,642][__main__][INFO] - Epoch 27/50 | LR: 2.24e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.4s
+[2025-05-14 15:27:13,235][__main__][INFO] - Epoch 28/50 | LR: 1.95e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0062 | Time: 110.6s
+[2025-05-14 15:29:03,763][__main__][INFO] - Epoch 29/50 | LR: 1.71e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.5s
+[2025-05-14 15:30:54,413][__main__][INFO] - Epoch 30/50 | LR: 1.49e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:32:45,053][__main__][INFO] - Epoch 31/50 | LR: 1.30e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0062 | Time: 110.6s
+[2025-05-14 15:34:35,673][__main__][INFO] - Epoch 32/50 | LR: 1.14e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:36:26,298][__main__][INFO] - Epoch 33/50 | LR: 9.94e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:38:16,914][__main__][INFO] - Epoch 34/50 | LR: 8.69e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:40:07,580][__main__][INFO] - Epoch 35/50 | LR: 7.59e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.7s
+[2025-05-14 15:41:58,367][__main__][INFO] - Epoch 36/50 | LR: 6.63e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.8s
+[2025-05-14 15:43:49,033][__main__][INFO] - Epoch 37/50 | LR: 5.79e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.7s
+[2025-05-14 15:45:39,663][__main__][INFO] - Epoch 38/50 | LR: 5.06e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:47:30,302][__main__][INFO] - Epoch 39/50 | LR: 4.42e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:49:20,930][__main__][INFO] - Epoch 40/50 | LR: 3.86e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:51:11,571][__main__][INFO] - Epoch 41/50 | LR: 3.37e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:53:02,097][__main__][INFO] - Epoch 42/50 | LR: 2.95e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.5s
+[2025-05-14 15:54:52,730][__main__][INFO] - Epoch 43/50 | LR: 2.57e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 15:56:43,256][__main__][INFO] - Epoch 44/50 | LR: 2.25e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.5s
+[2025-05-14 15:58:33,879][__main__][INFO] - Epoch 45/50 | LR: 1.97e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 16:00:24,391][__main__][INFO] - Epoch 46/50 | LR: 1.72e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.5s
+[2025-05-14 16:02:14,962][__main__][INFO] - Epoch 47/50 | LR: 1.50e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 16:04:05,602][__main__][INFO] - Epoch 48/50 | LR: 1.31e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 16:05:56,218][__main__][INFO] - Epoch 49/50 | LR: 1.14e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 110.6s
+[2025-05-14 16:07:46,845][__main__][INFO] - Epoch 50: Evaluating metrics on validation set...
+[2025-05-14 16:08:00,689][__main__][INFO] - Epoch 50: Val Metrics | PESQ: nan | STOI: nan | SI-SDR: nan | Eval Time: 13.8s
+[2025-05-14 16:08:00,689][__main__][INFO] - Epoch 50/50 | LR: 1.00e-04 | Tr Loss: 0.0059 | Vl Loss(p): 0.0061 | Time: 124.5s
+[2025-05-14 16:08:00,691][__main__][INFO] - ==============================
+[2025-05-14 16:08:00,691][__main__][INFO] - Training finished.
+[2025-05-14 16:08:00,692][__main__][INFO] - Completed 50 epochs. Best val_loss: 0.0061 achieved at epoch 26.
+[2025-05-14 16:08:00,694][__main__][INFO] - Best model weights saved to: /scratch/lustre/home/maba8006/Tiny-SDnCNN/outputs/2025-05-14_14-35-06/best_model.pt
+[2025-05-14 16:08:00,695][__main__][INFO] - ==============================

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F_BG014_02-a0125</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0 auto;
+            padding: 1rem;
+            max-width: 60rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            text-align: left;
+            padding: 0.5rem;
+            background: blue;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        tbody td {
+            padding: 0.75rem;
+            background: #fff;
+            border-bottom: 1px dashed black;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody td.snr {
+            text-align: center;
+            font-weight: 600;
+            width: 4rem;
+        }
+
+        figure {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        audio {
+            width: 100%;
+            border-radius: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Garso įrašas <b>F_BG014_02-a0125</b></h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SNR (dB)</th>
+                <th>Triukšmingas signalas</th>
+                <th>Atstatytas (pradinis modelis)</th>
+                <th>Atstatytas (siūlomas modelis)</th>
+            </tr>
+        </thead>
+        <tbody id="audio-rows"></tbody>
+    </table>
+
+    <script>
+        const snrTags = Array.from({ length: 12 }, (_, i) => (i * 3).toString().padStart(2, "0"));
+        const base = "F_BG014_02-a0125";
+        const tbody = document.getElementById("audio-rows");
+
+        snrTags.forEach(tag => {
+            const row = document.createElement("tr");
+
+            const snrCell = document.createElement("td");
+            snrCell.className = "snr";
+            snrCell.textContent = tag;
+            row.appendChild(snrCell);
+
+            const sources = [
+                `audio/noisy/${base}_w${tag}.wav`,
+                `audio/denoised/original/${base}_w${tag}.wav`,
+                `audio/denoised/proposed/${base}_w${tag}.wav`
+            ];
+
+            sources.forEach((src, idx) => {
+                const td = document.createElement("td");
+                const fig = document.createElement("figure");
+
+                const player = document.createElement("audio");
+                player.controls = true;
+                player.src = src;
+                player.preload = "none";
+
+
+                fig.appendChild(player);
+                td.appendChild(fig);
+                row.appendChild(td);
+            });
+
+            tbody.appendChild(row);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+Overall Average Metrics (for target SNRs):
+  PESQ:   2.489889 (over 720 of 720 files)
+  STOI:   0.895964 (over 720 of 720 files)
+  SI-SDR: 16.613302 (over 720 of 720 files)
+  Total files considered for overall average: 720

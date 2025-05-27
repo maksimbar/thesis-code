@@ -1,0 +1,129 @@
+[2025-05-11 17:48:12,315][__main__][INFO] - Using device: cuda
+[2025-05-11 17:48:38,209][utils][INFO] - Created training dataset / Clean files: 180 / Total patches: 33456
+[2025-05-11 17:48:44,657][utils][INFO] - Created validation dataset / Clean files: 60 / Total patches: 11028
+[2025-05-11 17:48:44,659][model][INFO] - Model config: layers=17, channels=64, activation=prelu, dilations: [1]
+[2025-05-11 17:48:44,677][__main__][INFO] - Trainable parameters: 557,121
+[2025-05-11 17:48:50,939][__main__][INFO] - Using SGD optimizer with initial LR: 0.075
+[2025-05-11 17:48:50,943][__main__][INFO] - Starting training for up to 50 epochs on cuda
+[2025-05-11 17:48:50,943][__main__][INFO] -  - Train batches/epoch: 261
+[2025-05-11 17:48:50,943][__main__][INFO] -  - Val patch batches/epoch: 87
+[2025-05-11 17:48:50,943][__main__][INFO] - Early stopping: Enabled
+[2025-05-11 17:48:50,943][__main__][INFO] -  - Patience: 5, Min Delta: 1e-05
+[2025-05-11 17:48:50,945][utils][INFO] - Creating validation metrics AudioMetricDataset from /scratch/lustre/home/maba8006/Tiny-SDnCNN/data/valid...
+[2025-05-11 17:48:50,958][utils][INFO] - Finished creating validation metrics dataset.
+[2025-05-11 17:48:50,958][utils][INFO] - Found 720 clean/noisy pairs.
+[2025-05-11 17:48:50,959][__main__][INFO] - Validation metrics will be evaluated every 1 epochs on 720 files.
+[2025-05-11 17:50:35,477][__main__][INFO] - Epoch 1: Evaluating metrics on validation set...
+[2025-05-11 17:51:49,854][__main__][INFO] - Epoch 1: Val Metrics | PESQ: 1.941 | STOI: nan | SI-SDR: nan | Eval Time: 74.4s
+[2025-05-11 17:51:49,855][__main__][INFO] - Epoch 1/50 | LR: 7.50e-02 | Tr Loss: 0.0405 | Vl Loss(p): 0.0081 | Time: 178.9s
+[2025-05-11 17:51:49,887][__main__][INFO] - Metric val_loss improved (0.0081 --> 0.0081). Saved best model.
+[2025-05-11 17:53:32,945][__main__][INFO] - Epoch 2: Evaluating metrics on validation set...
+[2025-05-11 17:54:47,064][__main__][INFO] - Epoch 2: Val Metrics | PESQ: 2.068 | STOI: nan | SI-SDR: nan | Eval Time: 74.1s
+[2025-05-11 17:54:47,065][__main__][INFO] - Epoch 2/50 | LR: 6.55e-02 | Tr Loss: 0.0078 | Vl Loss(p): 0.0077 | Time: 177.2s
+[2025-05-11 17:54:47,083][__main__][INFO] - Metric val_loss improved (0.0077 --> 0.0077). Saved best model.
+[2025-05-11 17:56:30,426][__main__][INFO] - Epoch 3: Evaluating metrics on validation set...
+[2025-05-11 17:57:46,749][__main__][INFO] - Epoch 3: Val Metrics | PESQ: 1.999 | STOI: nan | SI-SDR: nan | Eval Time: 76.3s
+[2025-05-11 17:57:46,750][__main__][INFO] - Epoch 3/50 | LR: 5.72e-02 | Tr Loss: 0.0072 | Vl Loss(p): 0.0072 | Time: 179.7s
+[2025-05-11 17:57:46,767][__main__][INFO] - Metric val_loss improved (0.0072 --> 0.0072). Saved best model.
+[2025-05-11 17:59:29,889][__main__][INFO] - Epoch 4: Evaluating metrics on validation set...
+[2025-05-11 18:00:43,221][__main__][INFO] - Epoch 4: Val Metrics | PESQ: 2.247 | STOI: nan | SI-SDR: nan | Eval Time: 73.3s
+[2025-05-11 18:00:43,221][__main__][INFO] - Epoch 4/50 | LR: 5.00e-02 | Tr Loss: 0.0069 | Vl Loss(p): 0.0068 | Time: 176.5s
+[2025-05-11 18:00:43,238][__main__][INFO] - Metric val_loss improved (0.0068 --> 0.0068). Saved best model.
+[2025-05-11 18:02:26,221][__main__][INFO] - Epoch 5: Evaluating metrics on validation set...
+[2025-05-11 18:03:39,532][__main__][INFO] - Epoch 5: Val Metrics | PESQ: 2.180 | STOI: nan | SI-SDR: nan | Eval Time: 73.3s
+[2025-05-11 18:03:39,532][__main__][INFO] - Epoch 5/50 | LR: 4.37e-02 | Tr Loss: 0.0066 | Vl Loss(p): 0.0067 | Time: 176.3s
+[2025-05-11 18:03:39,550][__main__][INFO] - Metric val_loss improved (0.0067 --> 0.0067). Saved best model.
+[2025-05-11 18:05:22,737][__main__][INFO] - Epoch 6: Evaluating metrics on validation set...
+[2025-05-11 18:06:40,762][__main__][INFO] - Epoch 6: Val Metrics | PESQ: 2.143 | STOI: nan | SI-SDR: nan | Eval Time: 78.0s
+[2025-05-11 18:06:40,762][__main__][INFO] - Epoch 6/50 | LR: 3.82e-02 | Tr Loss: 0.0065 | Vl Loss(p): 0.0067 | Time: 181.2s
+[2025-05-11 18:08:24,082][__main__][INFO] - Epoch 7: Evaluating metrics on validation set...
+[2025-05-11 18:09:37,122][__main__][INFO] - Epoch 7: Val Metrics | PESQ: 2.201 | STOI: nan | SI-SDR: nan | Eval Time: 73.0s
+[2025-05-11 18:09:37,122][__main__][INFO] - Epoch 7/50 | LR: 3.33e-02 | Tr Loss: 0.0064 | Vl Loss(p): 0.0068 | Time: 176.4s
+[2025-05-11 18:11:20,258][__main__][INFO] - Epoch 8: Evaluating metrics on validation set...
+[2025-05-11 18:12:31,799][__main__][INFO] - Epoch 8: Val Metrics | PESQ: 2.218 | STOI: nan | SI-SDR: nan | Eval Time: 71.5s
+[2025-05-11 18:12:31,799][__main__][INFO] - Epoch 8/50 | LR: 2.91e-02 | Tr Loss: 0.0063 | Vl Loss(p): 0.0062 | Time: 174.7s
+[2025-05-11 18:12:31,817][__main__][INFO] - Metric val_loss improved (0.0062 --> 0.0062). Saved best model.
+[2025-05-11 18:14:14,799][__main__][INFO] - Epoch 9: Evaluating metrics on validation set...
+[2025-05-11 18:15:27,689][__main__][INFO] - Epoch 9: Val Metrics | PESQ: 2.129 | STOI: nan | SI-SDR: nan | Eval Time: 72.9s
+[2025-05-11 18:15:27,690][__main__][INFO] - Epoch 9/50 | LR: 2.54e-02 | Tr Loss: 0.0062 | Vl Loss(p): 0.0066 | Time: 175.9s
+[2025-05-11 18:17:10,968][__main__][INFO] - Epoch 10: Evaluating metrics on validation set...
+[2025-05-11 18:18:26,436][__main__][INFO] - Epoch 10: Val Metrics | PESQ: 2.292 | STOI: nan | SI-SDR: nan | Eval Time: 75.5s
+[2025-05-11 18:18:26,436][__main__][INFO] - Epoch 10/50 | LR: 2.22e-02 | Tr Loss: 0.0061 | Vl Loss(p): 0.0063 | Time: 178.7s
+[2025-05-11 18:20:09,724][__main__][INFO] - Epoch 11: Evaluating metrics on validation set...
+[2025-05-11 18:21:22,102][__main__][INFO] - Epoch 11: Val Metrics | PESQ: 2.296 | STOI: nan | SI-SDR: nan | Eval Time: 72.4s
+[2025-05-11 18:21:22,102][__main__][INFO] - Epoch 11/50 | LR: 1.94e-02 | Tr Loss: 0.0061 | Vl Loss(p): 0.0062 | Time: 175.7s
+[2025-05-11 18:21:22,121][__main__][INFO] - Metric val_loss improved (0.0062 --> 0.0062). Saved best model.
+[2025-05-11 18:23:05,260][__main__][INFO] - Epoch 12: Evaluating metrics on validation set...
+[2025-05-11 18:24:18,285][__main__][INFO] - Epoch 12: Val Metrics | PESQ: 2.172 | STOI: nan | SI-SDR: nan | Eval Time: 73.0s
+[2025-05-11 18:24:18,285][__main__][INFO] - Epoch 12/50 | LR: 1.70e-02 | Tr Loss: 0.0061 | Vl Loss(p): 0.0061 | Time: 176.2s
+[2025-05-11 18:24:18,303][__main__][INFO] - Metric val_loss improved (0.0061 --> 0.0061). Saved best model.
+[2025-05-11 18:26:01,446][__main__][INFO] - Epoch 13: Evaluating metrics on validation set...
+[2025-05-11 18:27:15,272][__main__][INFO] - Epoch 13: Val Metrics | PESQ: 2.285 | STOI: nan | SI-SDR: nan | Eval Time: 73.8s
+[2025-05-11 18:27:15,272][__main__][INFO] - Epoch 13/50 | LR: 1.48e-02 | Tr Loss: 0.0060 | Vl Loss(p): 0.0063 | Time: 177.0s
+[2025-05-11 18:28:58,710][__main__][INFO] - Epoch 14: Evaluating metrics on validation set...
+[2025-05-11 18:30:12,312][__main__][INFO] - Epoch 14: Val Metrics | PESQ: 2.209 | STOI: nan | SI-SDR: nan | Eval Time: 73.6s
+[2025-05-11 18:30:12,312][__main__][INFO] - Epoch 14/50 | LR: 1.30e-02 | Tr Loss: 0.0060 | Vl Loss(p): 0.0061 | Time: 177.0s
+[2025-05-11 18:30:12,329][__main__][INFO] - Metric val_loss improved (0.0061 --> 0.0061). Saved best model.
+[2025-05-11 18:31:54,955][__main__][INFO] - Epoch 15: Evaluating metrics on validation set...
+[2025-05-11 18:33:05,198][__main__][INFO] - Epoch 15: Val Metrics | PESQ: 2.263 | STOI: nan | SI-SDR: nan | Eval Time: 70.2s
+[2025-05-11 18:33:05,198][__main__][INFO] - Epoch 15/50 | LR: 1.13e-02 | Tr Loss: 0.0060 | Vl Loss(p): 0.0060 | Time: 172.9s
+[2025-05-11 18:33:05,216][__main__][INFO] - Metric val_loss improved (0.0060 --> 0.0060). Saved best model.
+[2025-05-11 18:34:47,854][__main__][INFO] - Epoch 16: Evaluating metrics on validation set...
+[2025-05-11 18:35:57,377][__main__][INFO] - Epoch 16: Val Metrics | PESQ: 2.358 | STOI: nan | SI-SDR: nan | Eval Time: 69.5s
+[2025-05-11 18:35:57,378][__main__][INFO] - Epoch 16/50 | LR: 9.88e-03 | Tr Loss: 0.0060 | Vl Loss(p): 0.0060 | Time: 172.2s
+[2025-05-11 18:37:40,134][__main__][INFO] - Epoch 17: Evaluating metrics on validation set...
+[2025-05-11 18:38:55,111][__main__][INFO] - Epoch 17: Val Metrics | PESQ: 2.301 | STOI: nan | SI-SDR: nan | Eval Time: 75.0s
+[2025-05-11 18:38:55,111][__main__][INFO] - Epoch 17/50 | LR: 8.64e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 177.7s
+[2025-05-11 18:38:55,130][__main__][INFO] - Metric val_loss improved (0.0059 --> 0.0059). Saved best model.
+[2025-05-11 18:40:37,720][__main__][INFO] - Epoch 18: Evaluating metrics on validation set...
+[2025-05-11 18:41:47,406][__main__][INFO] - Epoch 18: Val Metrics | PESQ: 2.255 | STOI: nan | SI-SDR: nan | Eval Time: 69.7s
+[2025-05-11 18:41:47,407][__main__][INFO] - Epoch 18/50 | LR: 7.54e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0062 | Time: 172.3s
+[2025-05-11 18:43:29,884][__main__][INFO] - Epoch 19: Evaluating metrics on validation set...
+[2025-05-11 18:44:39,912][__main__][INFO] - Epoch 19: Val Metrics | PESQ: 2.255 | STOI: nan | SI-SDR: nan | Eval Time: 70.0s
+[2025-05-11 18:44:39,912][__main__][INFO] - Epoch 19/50 | LR: 6.59e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0060 | Time: 172.5s
+[2025-05-11 18:46:22,455][__main__][INFO] - Epoch 20: Evaluating metrics on validation set...
+[2025-05-11 18:47:32,217][__main__][INFO] - Epoch 20: Val Metrics | PESQ: 2.314 | STOI: nan | SI-SDR: nan | Eval Time: 69.8s
+[2025-05-11 18:47:32,218][__main__][INFO] - Epoch 20/50 | LR: 5.76e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 172.3s
+[2025-05-11 18:47:32,235][__main__][INFO] - Metric val_loss improved (0.0059 --> 0.0059). Saved best model.
+[2025-05-11 18:49:15,148][__main__][INFO] - Epoch 21: Evaluating metrics on validation set...
+[2025-05-11 18:50:21,277][__main__][INFO] - Epoch 21: Val Metrics | PESQ: 2.283 | STOI: nan | SI-SDR: nan | Eval Time: 66.1s
+[2025-05-11 18:50:21,277][__main__][INFO] - Epoch 21/50 | LR: 5.03e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0060 | Time: 169.0s
+[2025-05-11 18:52:03,570][__main__][INFO] - Epoch 22: Evaluating metrics on validation set...
+[2025-05-11 18:53:13,260][__main__][INFO] - Epoch 22: Val Metrics | PESQ: 2.275 | STOI: nan | SI-SDR: nan | Eval Time: 69.7s
+[2025-05-11 18:53:13,261][__main__][INFO] - Epoch 22/50 | LR: 4.39e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 172.0s
+[2025-05-11 18:53:13,280][__main__][INFO] - Metric val_loss improved (0.0059 --> 0.0059). Saved best model.
+[2025-05-11 18:54:56,007][__main__][INFO] - Epoch 23: Evaluating metrics on validation set...
+[2025-05-11 18:56:05,628][__main__][INFO] - Epoch 23: Val Metrics | PESQ: 2.298 | STOI: nan | SI-SDR: nan | Eval Time: 69.6s
+[2025-05-11 18:56:05,628][__main__][INFO] - Epoch 23/50 | LR: 3.84e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 172.3s
+[2025-05-11 18:57:48,191][__main__][INFO] - Epoch 24: Evaluating metrics on validation set...
+[2025-05-11 18:58:58,173][__main__][INFO] - Epoch 24: Val Metrics | PESQ: 2.296 | STOI: nan | SI-SDR: nan | Eval Time: 70.0s
+[2025-05-11 18:58:58,173][__main__][INFO] - Epoch 24/50 | LR: 3.35e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 172.5s
+[2025-05-11 19:00:41,026][__main__][INFO] - Epoch 25: Evaluating metrics on validation set...
+[2025-05-11 19:01:54,875][__main__][INFO] - Epoch 25: Val Metrics | PESQ: 2.327 | STOI: nan | SI-SDR: nan | Eval Time: 73.8s
+[2025-05-11 19:01:54,876][__main__][INFO] - Epoch 25/50 | LR: 2.93e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 176.7s
+[2025-05-11 19:01:54,909][__main__][INFO] - Metric val_loss improved (0.0059 --> 0.0059). Saved best model.
+[2025-05-11 19:03:37,655][__main__][INFO] - Epoch 26: Evaluating metrics on validation set...
+[2025-05-11 19:04:47,502][__main__][INFO] - Epoch 26: Val Metrics | PESQ: 2.303 | STOI: nan | SI-SDR: nan | Eval Time: 69.8s
+[2025-05-11 19:04:47,502][__main__][INFO] - Epoch 26/50 | LR: 2.56e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0058 | Time: 172.6s
+[2025-05-11 19:04:47,520][__main__][INFO] - Metric val_loss improved (0.0058 --> 0.0058). Saved best model.
+[2025-05-11 19:06:30,246][__main__][INFO] - Epoch 27: Evaluating metrics on validation set...
+[2025-05-11 19:07:40,223][__main__][INFO] - Epoch 27: Val Metrics | PESQ: 2.275 | STOI: nan | SI-SDR: nan | Eval Time: 70.0s
+[2025-05-11 19:07:40,223][__main__][INFO] - Epoch 27/50 | LR: 2.24e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 172.7s
+[2025-05-11 19:09:22,924][__main__][INFO] - Epoch 28: Evaluating metrics on validation set...
+[2025-05-11 19:10:35,684][__main__][INFO] - Epoch 28: Val Metrics | PESQ: 2.291 | STOI: nan | SI-SDR: nan | Eval Time: 72.8s
+[2025-05-11 19:10:35,685][__main__][INFO] - Epoch 28/50 | LR: 1.95e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 175.5s
+[2025-05-11 19:12:18,714][__main__][INFO] - Epoch 29: Evaluating metrics on validation set...
+[2025-05-11 19:13:29,317][__main__][INFO] - Epoch 29: Val Metrics | PESQ: 2.265 | STOI: nan | SI-SDR: nan | Eval Time: 70.6s
+[2025-05-11 19:13:29,318][__main__][INFO] - Epoch 29/50 | LR: 1.71e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 173.6s
+[2025-05-11 19:15:12,007][__main__][INFO] - Epoch 30: Evaluating metrics on validation set...
+[2025-05-11 19:16:21,960][__main__][INFO] - Epoch 30: Val Metrics | PESQ: 2.301 | STOI: nan | SI-SDR: nan | Eval Time: 70.0s
+[2025-05-11 19:16:21,961][__main__][INFO] - Epoch 30/50 | LR: 1.49e-03 | Tr Loss: 0.0059 | Vl Loss(p): 0.0059 | Time: 172.6s
+[2025-05-11 19:18:04,583][__main__][INFO] - Epoch 31: Evaluating metrics on validation set...
+[2025-05-11 19:19:14,477][__main__][INFO] - Epoch 31: Val Metrics | PESQ: 2.302 | STOI: nan | SI-SDR: nan | Eval Time: 69.9s
+[2025-05-11 19:19:14,477][__main__][INFO] - Epoch 31/50 | LR: 1.30e-03 | Tr Loss: 0.0058 | Vl Loss(p): 0.0059 | Time: 172.5s
+[2025-05-11 19:19:14,479][__main__][INFO] - --- Early stopping triggered at epoch 31 ---
+[2025-05-11 19:19:14,479][__main__][INFO] - ==============================
+[2025-05-11 19:19:14,479][__main__][INFO] - Training finished.
+[2025-05-11 19:19:14,479][__main__][INFO] - Stopped early at epoch 31. Best val_loss: 0.0058 achieved at epoch 26.
+[2025-05-11 19:19:14,482][__main__][INFO] - Best model weights saved to: /scratch/lustre/home/maba8006/Tiny-SDnCNN/outputs/2025-05-11_17-48-12/best_model.pt
+[2025-05-11 19:19:14,483][__main__][INFO] - ==============================

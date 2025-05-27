@@ -1,0 +1,39 @@
+[2025-05-14 17:41:25,019][__main__][INFO] - Using seed: 42
+[2025-05-14 17:41:25,089][__main__][INFO] - Using device: cuda
+[2025-05-14 17:41:25,090][model][INFO] - Model config: layers=17, channels=64, activation=prelu, dilations: [2]
+[2025-05-14 17:41:25,101][__main__][INFO] - Loading model checkpoint from: ../../models/proposed_model.pt
+[2025-05-14 17:41:25,393][__main__][INFO] - Using test data directory: /scratch/lustre/home/maba8006/Tiny-SDnCNN/data/test
+[2025-05-14 17:41:25,394][__main__][INFO] - Target SNR levels for evaluation: [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33]
+[2025-05-14 17:41:25,394][utils][INFO] - Creating testing_metrics AudioMetricDataset from /scratch/lustre/home/maba8006/Tiny-SDnCNN/data/test...
+[2025-05-14 17:41:25,408][utils][INFO] - Finished creating testing_metrics dataset.
+[2025-05-14 17:41:25,409][utils][INFO] - Found 720 clean/noisy pairs.
+[2025-05-14 17:41:25,409][__main__][INFO] - Evaluating on 720 test file pairs from /scratch/lustre/home/maba8006/Tiny-SDnCNN/data/test.
+[2025-05-14 17:41:37,854][__main__][INFO] - Processed 101 files for testing...
+[2025-05-14 17:41:49,735][__main__][INFO] - Processed 201 files for testing...
+[2025-05-14 17:42:01,560][__main__][INFO] - Processed 301 files for testing...
+[2025-05-14 17:42:13,673][__main__][INFO] - Processed 401 files for testing...
+[2025-05-14 17:42:25,682][__main__][INFO] - Processed 501 files for testing...
+[2025-05-14 17:42:37,711][__main__][INFO] - Processed 601 files for testing...
+[2025-05-14 17:42:49,511][__main__][INFO] - Processed 701 files for testing...
+[2025-05-14 17:42:51,799][__main__][INFO] - Finished evaluating. Total files processed: 720.
+[2025-05-14 17:42:51,800][__main__][INFO] - Writing SNR-specific metrics to: /scratch/lustre/home/maba8006/Tiny-SDnCNN/outputs/2025-05-14_17-41-24/test_metrics_by_snr.csv
+[2025-05-14 17:42:51,802][__main__][INFO] - SNR  0 dB | PESQ: 1.257 (60/60) | STOI: 0.744171 (60/60) | SI-SDR: 10.005846 (60/60)
+[2025-05-14 17:42:51,802][__main__][INFO] - SNR  3 dB | PESQ: 1.390 (60/60) | STOI: 0.782060 (60/60) | SI-SDR: 11.960942 (60/60)
+[2025-05-14 17:42:51,803][__main__][INFO] - SNR  6 dB | PESQ: 1.530 (60/60) | STOI: 0.819700 (60/60) | SI-SDR: 13.521549 (60/60)
+[2025-05-14 17:42:51,803][__main__][INFO] - SNR  9 dB | PESQ: 1.691 (60/60) | STOI: 0.851732 (60/60) | SI-SDR: 14.945737 (60/60)
+[2025-05-14 17:42:51,803][__main__][INFO] - SNR 12 dB | PESQ: 1.933 (60/60) | STOI: 0.881764 (60/60) | SI-SDR: 16.239792 (60/60)
+[2025-05-14 17:42:51,803][__main__][INFO] - SNR 15 dB | PESQ: 2.196 (60/60) | STOI: 0.907570 (60/60) | SI-SDR: 17.338028 (60/60)
+[2025-05-14 17:42:51,803][__main__][INFO] - SNR 18 dB | PESQ: 2.547 (60/60) | STOI: 0.929379 (60/60) | SI-SDR: 18.065911 (60/60)
+[2025-05-14 17:42:51,803][__main__][INFO] - SNR 21 dB | PESQ: 2.855 (60/60) | STOI: 0.946671 (60/60) | SI-SDR: 18.790431 (60/60)
+[2025-05-14 17:42:51,804][__main__][INFO] - SNR 24 dB | PESQ: 3.248 (60/60) | STOI: 0.960086 (60/60) | SI-SDR: 19.358449 (60/60)
+[2025-05-14 17:42:51,804][__main__][INFO] - SNR 27 dB | PESQ: 3.510 (60/60) | STOI: 0.969954 (60/60) | SI-SDR: 19.514351 (60/60)
+[2025-05-14 17:42:51,804][__main__][INFO] - SNR 30 dB | PESQ: 3.757 (60/60) | STOI: 0.976845 (60/60) | SI-SDR: 19.708143 (60/60)
+[2025-05-14 17:42:51,804][__main__][INFO] - SNR 33 dB | PESQ: 3.964 (60/60) | STOI: 0.981639 (60/60) | SI-SDR: 19.910448 (60/60)
+[2025-05-14 17:42:51,806][__main__][INFO] - ------------------------------
+[2025-05-14 17:42:51,806][__main__][INFO] - Overall Average Metrics (for target SNRs):
+[2025-05-14 17:42:51,807][__main__][INFO] -   PESQ:   2.489889 (over 720 of 720 files)
+[2025-05-14 17:42:51,807][__main__][INFO] -   STOI:   0.895964 (over 720 of 720 files)
+[2025-05-14 17:42:51,807][__main__][INFO] -   SI-SDR: 16.613302 (over 720 of 720 files)
+[2025-05-14 17:42:51,807][__main__][INFO] -   Total files considered for overall average: 720
+[2025-05-14 17:42:51,807][__main__][INFO] - ------------------------------
+[2025-05-14 17:42:51,810][__main__][INFO] - Overall average metrics saved to: /scratch/lustre/home/maba8006/Tiny-SDnCNN/outputs/2025-05-14_17-41-24/test_metrics_overall.txt
